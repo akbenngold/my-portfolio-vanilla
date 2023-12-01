@@ -48,7 +48,6 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
-  user-select: none;
 }
 
 button {
@@ -65,4 +64,5 @@ a {
 
 strong {
   color: var(--clr-indigo);
+  font-size: var(--size-lg);
 }

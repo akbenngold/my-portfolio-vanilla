@@ -5,7 +5,9 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-
+.logo {
+  display: flex;
+}
 .header__menu {
   display: none;
 }
