@@ -6,8 +6,10 @@
   padding-bottom: 2rem;
 }
 .logo {
-  display: flex;
+  font-size: var(--size-lg);
+  transition: 1s ease-in;
 }
+
 .header__menu {
   display: none;
 }
@@ -78,6 +80,9 @@
 
   .header__resume {
     font-size: var(--size-sm);
+  }
+  .logo {
+    font-size: var(--size-xl);
   }
 }
 

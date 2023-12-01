@@ -4,18 +4,121 @@
   flex-direction: column;
   gap: 1rem;
   margin-top: 2rem;
+  transition: 2s;
 }
 
 .hero__image {
   background-image: url(/public/images/blob.svg);
   background-size: contain;
-  height: 300px;
+  height: 18rem;
   margin: auto;
   border-bottom-left-radius: 50%;
   transition: 1s;
 }
 
+.hero__subtitle {
+  color: var(--clr-slate800);
+  font-size: var(--size-base);
+}
+
 .hero__image:hover {
   background-position-x: 10px;
   background-position-y: -50px;
+}
+
+.hero__title {
+  font-size: var(--size-4xl);
+  color: var(--clr-slate600);
+  text-transform: capitalize;
+}
+
+.hero__description {
+  max-width: 60ch;
+  color: var(--clr-slate400);
+}
+
+@media (min-width: 475px) {
+  .hero {
+    gap: 1.5rem;
+  }
+}
+/* md */
+@media (min-width: 768px) {
+  .hero {
+    gap: 1.7rem;
+    position: relative;
+    padding: 100px;
+  }
+  .hero__image {
+    position: absolute;
+    right: -3rem;
+    height: 22rem;
+    bottom: 5rem;
+  }
+  .hero__subtitle,
+  .hero__description,
+  .hero__title {
+    margin-left: 1.7rem;
+    text-align: left;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .hero__image {
+    right: 3rem;
+    height: 25rem;
+  }
+  .hero__subtitle,
+  .hero__description,
+  .hero__title {
+    margin-left: 5rem;
+    text-align: left;
+  }
+}
+/* xl */
+@media (min-width: 1280px) {
+  .hero__image {
+    right: 8rem;
+    height: 30rem;
+    top: 2rem;
+  }
+  .hero__subtitle,
+  .hero__description,
+  .hero__title {
+    margin-left: 7rem;
+  }
+
+  .hero__subtitle {
+    font-size: var(--size-lg);
+  }
+  .hero__description {
+    font-size: var(--size-lg);
+  }
+  .hero__title {
+    font-size: var(--size-5xl);
+  }
+}
+/* 2xl */
+@media (min-width: 1536px) {
+  .hero__image {
+    right: 10rem;
+    height: 32rem;
+    top: 1rem;
+  }
+  .hero__subtitle,
+  .hero__description,
+  .hero__title {
+    margin-left: 10rem;
+  }
+
+  .hero__subtitle {
+    font-size: var(--size-xl);
+  }
+  .hero__description {
+    font-size: var(--size-xl);
+  }
+  .hero__title {
+    font-size: var(--size-6xl);
+  }
 }
