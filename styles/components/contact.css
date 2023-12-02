@@ -1,0 +1,20 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.contact__title {
+  font-size: var(--size-3xl);
+}
+.contact__description {
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+}
+
+.contact__btn {
+  font-size: var(--size-sm);
+}

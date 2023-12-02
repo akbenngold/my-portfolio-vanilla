@@ -15,7 +15,12 @@
   border-bottom-left-radius: 50%;
   transition: 1s;
 }
-
+.hero__socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  opacity: 0.5;
+}
 .hero__subtitle {
   color: var(--clr-slate800);
   font-size: var(--size-base);

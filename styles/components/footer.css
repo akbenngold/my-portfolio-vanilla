@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--clr-slate600);
+  font-size: var(--size-xs);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+}
+.fa-brands:hover {
+  cursor: pointer;
+  scale: 1.1;
+  color: var(--clr-slate400);
+}
+.footer__copyrights {
+  user-select: none;
+}
